@@ -2,6 +2,7 @@
 
 #include "pch.h"
 #include <iostream>
+#include <Windows.h>
 
 
 struct footballPlayer {
@@ -59,6 +60,8 @@ void playedLessThan5Games(footballPlayer *M, int N) { // Поиск игроко
 
 int main()
 {
+	SetConsoleCP(1251);// установка кодовой страницы win-cp 1251 в поток ввода
+	SetConsoleOutputCP(1251); // установка кодовой страницы win-cp 1251 в поток вывода
 	setlocale(LC_ALL, "Rus");
 	
 	int N;      
